@@ -1,7 +1,7 @@
 # aviahack
 
 The project is a computer vision model working with the Yolov5 library, an extension of the OpenCv. 
-It's open source which means that custom data models can be used knstead of the already existing data set
+It's open source which means that custom data models can be used instead of the already existing data set
 numpy, matplotlib. A video file was used as the resource but it can also work with live feed. other Aeroplanes are highlighted differently when detected
 
 #Main.py

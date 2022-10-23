@@ -14,17 +14,19 @@ def lat_to_cart(lat, long):
 
 #method of
 def coordinate_mapping():
-    pass
+    img = cv2.imread('test.jpg', 0)
+    edges = cv2.Canny(img, 100, 255)
 
-img = cv2.imread('test.jpg', 0)
-edges = cv2.Canny(img, 100, 255)
+    indices = np.where(edges != [0])
+    coordinates = zip(indices[0], indices[1])
 
-indices = np.where(edges != [0])
-coordinates = zip(indices[0], indices[1])
+    xcoord = indices[0]
+    ycoords = indices[1]
 
-xcoord = indices[0]
-ycoords = indices[1]
+    #print(indices)
+    return xcoord, ycoords
 
-print(indices)
-print(xcoord,ycoords )
+
+
+
 
